@@ -1,0 +1,125 @@
+#version 460 core
+struct Particle {
+	vec3 position;
+	vec3 velocity;
+	vec3 accel;
+	vec4 color;
+	vec2 scale;
+	float life;
+};
+
+
+
+// Xorshift PRNG with state
+// The PRNG will take a state (seed) and return a pseudo-random float.
+uint xorshift32(uint state) {
+    state ^= (state << 21);
+    state ^= (state >> 35);
+    state ^= (state << 4);
+    return state;
+}
+
+// Advances the PRNG state and returns a corresponding random float.
+float prng(inout uint state) {
+    state = xorshift32(state);  // Update the state
+
+    return float(state) / float(0xFFFFFFFF);  // Normalize to [0, 1]
+}
+
+// Generate a random float between minVal and maxVal
+float rng1(float minVal, float maxVal, inout uint state) {
+    return mix(minVal, maxVal, prng(state)); // Use prng for random value between min and max
+}
+
+// Generate a random vec2
+vec2 rng2(vec2 minVal, vec2 maxVal, inout uint state) {
+    return mix(minVal, maxVal, vec2(prng(state), prng(state)));
+}
+
+// Generate a random vec3
+vec3 rng3(vec3 minVal, vec3 maxVal, inout uint state) {
+    return mix(minVal, maxVal, vec3(prng(state), prng(state), prng(state)));
+}
+
+// Generate a random vec4
+vec4 rng4(vec4 minVal, vec4 maxVal, inout uint state) {
+    return mix(minVal, maxVal, vec4(prng(state), prng(state), prng(state), prng(state)));
+}
+
+
+
+
+
+struct EmitterSettings {
+  vec4 minColor, maxColor;
+  vec3 minOffset, maxOffset;
+  vec3 minVelocity, maxVelocity;
+  vec3 minAccel, maxAccel;
+  vec2 minScale, maxScale;
+  float minLife, maxLife;
+
+  vec3 position;
+};
+
+layout(std430, binding = 0) writeonly restrict buffer SSBO_0 {
+  Particle particles[];
+};
+
+layout(std430, binding = 1) coherent restrict buffer SSBO_1 {
+  int count;
+  int indices[];
+}freelist;
+
+layout(location = 0) uniform int u_particlesToSpawn;
+layout(location = 1) uniform EmitterSettings u_emitter;
+
+// Define 5 starting positions
+const vec3 startPositions[5] = vec3[5](
+    vec3(0.0, 1.0, 0.0), // Position 1
+    vec3(1.0, 0.8, 0.0), // Position 2
+    vec3(-1.0, 1.2, 0.0), // Position 3
+    vec3(1.0, 0.9, 1.0), // Position 4
+    vec3(-1.0, 1.0, 0.0)  // Position 5
+);
+
+// make a particle with predetermined starting positions
+void MakeParticle(out Particle particle) {
+  uint seed = uint(gl_GlobalInvocationID.x + gl_GlobalInvocationID.y);
+
+  // Use the particle's index to select a position
+  int freeListIndex = atomicAdd(freelist.count, -1) - 1;
+  if (freeListIndex < 0) {
+    atomicAdd(freelist.count, 1);
+    return;
+  }
+
+  int startIndex = freelist.indices[freeListIndex] % 5; // Cycle through 5 positions
+  particle.position = u_emitter.position + startPositions[startIndex];
+
+  particle.life =         10;
+  particle.velocity.xyz = rng3(u_emitter.minVelocity.xyz, u_emitter.maxVelocity.xyz, seed);
+  particle.accel.xyz =    rng3(u_emitter.minAccel.xyz, u_emitter.maxAccel.xyz, seed);
+  particle.scale.xy =     rng2(u_emitter.minScale.xy, u_emitter.maxScale.xy, seed);
+  particle.color.rgba =   rng4(u_emitter.minColor.rgba, u_emitter.maxColor.rgba, seed);
+}
+layout(local_size_x = 64, local_size_y = 1, local_size_z = 1) in;
+void main() {
+  uint index = gl_GlobalInvocationID.x;
+
+  if (index >= u_particlesToSpawn)
+    return;
+
+
+  // undo decrement and return if nothing in freelist
+  int freeListIndex = atomicAdd(freelist.count, -1) - 1;
+
+  if (freeListIndex < 0) {
+    atomicAdd(freelist.count, 1);
+    return;
+  }
+
+
+
+  int particleIndex = freelist.indices[freeListIndex];
+  MakeParticle(particles[particleIndex]);
+}

@@ -1,0 +1,163 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"INSTALL"
+		],
+		"files" : 
+		[
+			"out/build/x64-Debug/_deps/assimp-src/code/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1334,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1342,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1343,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "libassimp5.2.4-dev",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/assimp-build/lib/assimp-vc143-mt_d.lib"
+			],
+			"targetId" : "assimp::@b1ea6f5c2178ebc90389",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "assimp-dev",
+			"destination" : "include/assimp",
+			"paths" : 
+			[
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/anim.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/aabb.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/ai_assert.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/camera.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/color4.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/color4.inl",
+				"out/build/x64-Debug/_deps/assimp-build/code/../include/assimp/config.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/ColladaMetaData.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/commonMetaData.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/defs.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/cfileio.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/light.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/material.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/material.inl",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/matrix3x3.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/matrix3x3.inl",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/matrix4x4.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/matrix4x4.inl",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/mesh.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/ObjMaterial.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/pbrmaterial.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/GltfMaterial.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/postprocess.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/quaternion.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/quaternion.inl",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/scene.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/metadata.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/texture.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/types.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/vector2.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/vector2.inl",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/vector3.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/vector3.inl",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/version.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/cimport.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/importerdesc.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Importer.hpp",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/DefaultLogger.hpp",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/ProgressHandler.hpp",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/IOStream.hpp",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/IOSystem.hpp",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Logger.hpp",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/LogStream.hpp",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/NullLogger.hpp",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/cexport.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Exporter.hpp",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/DefaultIOStream.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/DefaultIOSystem.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/ZipArchiveIOSystem.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/SceneCombiner.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/fast_atof.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/qnan.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/BaseImporter.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Hash.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/MemoryIOWrapper.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/ParsingUtils.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/StreamReader.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/StreamWriter.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/StringComparison.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/StringUtils.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/SGSpatialSort.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/GenericProperty.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/SpatialSort.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/SkeletonMeshBuilder.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/SmallVector.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/SmoothingGroups.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/SmoothingGroups.inl",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/StandardShapes.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/RemoveComments.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Subdivision.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Vertex.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/LineSplitter.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/TinyFormatter.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Profiler.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/LogAux.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Bitmap.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/XMLTools.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/IOStreamBuffer.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/CreateAnimMesh.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/XmlParser.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/BlobIOSystem.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/MathFunctions.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Exceptional.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/ByteSwapper.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Base64.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "assimp-dev",
+			"destination" : "include/assimp/Compiler",
+			"paths" : 
+			[
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Compiler/pushpack1.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Compiler/poppack1.h",
+				"out/build/x64-Debug/_deps/assimp-src/code/../include/assimp/Compiler/pstdint.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/assimp-build/code",
+		"source" : "out/build/x64-Debug/_deps/assimp-src/code"
+	}
+}

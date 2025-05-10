@@ -1,0 +1,18 @@
+# Blender 4.0.2 MTL File: 'None'
+# www.blender.org
+
+newmtl Material.001
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+map_Kd G:/X Project/assignment-x-the-project-ismolarczyk/res/models/TestScene/sphere_albedo.png
+map_Pm G:/X Project/assignment-x-the-project-ismolarczyk/res/models/TestScene/sphere_metallic.png
+map_Pr G:/X Project/assignment-x-the-project-ismolarczyk/res/models/TestScene/sphere_roughness.png
+map_Bump G:/X Project/assignment-x-the-project-ismolarczyk/res/models/TestScene/sphere_normal.png
+map_Ao G:/X Project/assignment-x-the-project-ismolarczyk/res/models/TestScene/sphere_ao.png

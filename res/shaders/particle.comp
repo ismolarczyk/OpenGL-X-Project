@@ -1,0 +1,55 @@
+#version 460 core
+
+struct Particle {
+    vec3 position;
+    vec3 velocity;
+    vec3 accel;
+    vec4 color;
+    vec2 scale;
+    float life;
+};
+
+// Buffer declarations
+layout(std430, binding = 0) buffer SSBO_0 {
+  Particle particles[];
+};
+
+layout(std430, binding = 1) buffer SSBO_1 {
+  coherent int count;
+  int indices[];
+} freelist;
+
+// Uniforms
+layout(location = 0) uniform float u_dt;
+
+const float swaySpeed = 0.01;  // Even slower sway speed
+const float swayAmplitude = 0.1;  // Much smaller amplitude (less movement)
+
+void UpdateParticle(inout Particle particle, int index) {
+  if (particle.life > 0) {
+    // Apply velocity and acceleration to particle movement
+    particle.velocity += particle.accel * u_dt;
+    particle.position += particle.velocity * u_dt;
+    particle.life -= u_dt;
+
+    // Apply swaying effect (slower and subtler sinusoidal motion along the X axis)
+    particle.position.x += swayAmplitude * sin(particle.life * swaySpeed);  // Very subtle sway
+
+    // If the particle is "dead", mark it for recycling
+    if (particle.life <= 0.0) {
+      particle.color.a = 0.0; // make the particle invisible
+      freelist.indices[atomicAdd(freelist.count, 1)] = index;
+    }
+  }
+}
+
+layout(local_size_x = 128, local_size_y = 1, local_size_z = 1) in;
+
+void main() {
+  uint index = gl_GlobalInvocationID.x;
+
+  if (index >= particles.length())
+    return;
+
+  UpdateParticle(particles[index], int(index));
+}

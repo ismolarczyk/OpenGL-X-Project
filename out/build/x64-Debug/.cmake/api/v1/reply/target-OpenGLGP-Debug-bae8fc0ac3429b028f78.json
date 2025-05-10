@@ -1,0 +1,1236 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "src/OpenGLGP.exe"
+		},
+		{
+			"path" : "src/OpenGLGP.pdb"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_executable",
+			"add_executable",
+			"target_link_libraries",
+			"TARGET_LINK_LIBRARIES",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"G:/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"src/CMakeLists.txt",
+			"out/build/x64-Debug/_deps/assimp-src/code/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 598,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1227,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 47,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 39,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 11,
+					"define" : "GLFW_INCLUDE_NONE"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "LIBRARY_SUFFIX=\"\""
+				},
+				{
+					"backtrace" : 13,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SPDLOG_COMPILED_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 14,
+					"path" : "G:/X Project/OpenGL-X-Project/src"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "G:/X Project/OpenGL-X-Project/thirdparty/glad/include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "G:/X Project/OpenGL-X-Project/thirdparty/stb_image"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "G:/X Project/OpenGL-X-Project/out/build/x64-Debug/_deps/imgui-src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "G:/X Project/OpenGL-X-Project/out/build/x64-Debug/_deps/assimp-src/code/../include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "G:/X Project/OpenGL-X-Project/out/build/x64-Debug/_deps/assimp-build/code/../include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/X Project/OpenGL-X-Project/out/build/x64-Debug/_deps/glfw-src/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "G:/X Project/OpenGL-X-Project/out/build/x64-Debug/_deps/spdlog-src/include"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "G:/X Project/OpenGL-X-Project/out/build/x64-Debug/_deps/glm-src/glm/.."
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "glad::@90d16ed2915c72dcc9c2"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "stb_image::@90d16ed2915c72dcc9c2"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "imgui::@90d16ed2915c72dcc9c2"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "zlibstatic::@7fd99959cf8fe87d223a"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "assimp::@b1ea6f5c2178ebc90389"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "glfw::@fa9f4482d3a2b070f206"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "spdlog::@eb35cfce7893ccfeff1e"
+		}
+	],
+	"id" : "OpenGLGP::@145eef247bfb46b6828c",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "thirdparty\\glad_d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "thirdparty\\stb_image_d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "_deps\\assimp-build\\lib\\assimp-vc143-mt_d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "_deps\\glfw-build\\src\\glfw3_d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "thirdparty\\imgui_d.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "_deps\\spdlog-build\\spdlogd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "_deps\\assimp-build\\contrib\\zlib\\zlibstaticd.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "OpenGLGP",
+	"nameOnDisk" : "OpenGLGP.exe",
+	"paths" : 
+	{
+		"build" : "src",
+		"source" : "src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				11,
+				12,
+				13,
+				14,
+				15
+			]
+		},
+		{
+			"name" : "Scene",
+			"sourceIndexes" : 
+			[
+				6,
+				7,
+				16,
+				17
+			]
+		},
+		{
+			"name" : "imgui_impl",
+			"sourceIndexes" : 
+			[
+				8,
+				9,
+				10,
+				18,
+				19
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				20
+			]
+		},
+		{
+			"name" : "res\\models\\TestScene\\grass",
+			"sourceIndexes" : 
+			[
+				21,
+				22,
+				23,
+				24,
+				25,
+				26
+			]
+		},
+		{
+			"name" : "res\\models\\TestScene\\ground",
+			"sourceIndexes" : 
+			[
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34
+			]
+		},
+		{
+			"name" : "res\\models\\TestScene\\lamp",
+			"sourceIndexes" : 
+			[
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41
+			]
+		},
+		{
+			"name" : "res\\models\\TestScene\\leaves",
+			"sourceIndexes" : 
+			[
+				42,
+				43,
+				44,
+				45,
+				46,
+				47
+			]
+		},
+		{
+			"name" : "res\\models\\TestScene\\mirrorFrame",
+			"sourceIndexes" : 
+			[
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54
+			]
+		},
+		{
+			"name" : "res\\models\\TestScene",
+			"sourceIndexes" : 
+			[
+				55,
+				56
+			]
+		},
+		{
+			"name" : "res\\models\\TestScene\\sphere",
+			"sourceIndexes" : 
+			[
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64
+			]
+		},
+		{
+			"name" : "res\\models\\TestScene\\tree",
+			"sourceIndexes" : 
+			[
+				65,
+				66,
+				67,
+				68,
+				69,
+				70
+			]
+		},
+		{
+			"name" : "res\\models\\nanosuit",
+			"sourceIndexes" : 
+			[
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97
+			]
+		},
+		{
+			"name" : "res\\models",
+			"sourceIndexes" : 
+			[
+				98
+			]
+		},
+		{
+			"name" : "res\\shaders",
+			"sourceIndexes" : 
+			[
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128
+			]
+		},
+		{
+			"name" : "res\\textures",
+			"sourceIndexes" : 
+			[
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"path" : "src/Object/Emitter.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Object/Entity.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Object/Mesh.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Object/Model.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Object/Particle.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Object/Shader.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Scene/Camera.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/Scene/Skybox.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/imgui_impl/imgui_impl_glfw.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/imgui_impl/imgui_impl_opengl3.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"path" : "src/imgui_impl/imgui_impl_opengl3_loader.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/Object/Emitter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/Object/Entity.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/Object/Mesh.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/Object/Model.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/Object/Shader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/Scene/Camera.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/Scene/Skybox.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/imgui_impl/imgui_impl_glfw.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/imgui_impl/imgui_impl_opengl3.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/grass/grass.fbx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/grass/grass_albedo.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/grass/grass_ao.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/grass/grass_metallic.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/grass/grass_normal.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/grass/grass_roughness.png",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/ground/ground.fbx",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/ground/ground.mtl",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/ground/ground.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/ground/ground_albedo.png",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/ground/ground_ao.png",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/ground/ground_metallic.png",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/ground/ground_normal.png",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/ground/ground_roughness.png",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/lamp/lamp.fbx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/lamp/lamp_albedo.png",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/lamp/lamp_ao.png",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/lamp/lamp_inside.fbx",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/lamp/lamp_metallic.png",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/lamp/lamp_normal.png",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/lamp/lamp_roughness.png",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/leaves/leaf_albedo.png",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/leaves/leaf_ao.png",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/leaves/leaf_metallic.png",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/leaves/leaf_normal.png",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/leaves/leaf_roughness.png",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/leaves/leaves.fbx",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/mirrorFrame/mirrorFrame.fbx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/mirrorFrame/mirrorFrame_albedo.png",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/mirrorFrame/mirrorFrame_ao.png",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/mirrorFrame/mirrorFrame_metallic.png",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/mirrorFrame/mirrorFrame_normal.png",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/mirrorFrame/mirrorFrame_roughness.png",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/mirrorFrame/mirrorGlass.fbx",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/particle.png",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/skybox.hdr",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/sphere/sphere.fbx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/sphere/sphere.mtl",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/sphere/sphere.obj",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/sphere/sphere_albedo.png",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/sphere/sphere_ao.png",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/sphere/sphere_metallic.png",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/sphere/sphere_normal.png",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/sphere/sphere_roughness.png",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/tree/tree.fbx",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/tree/tree_albedo.png",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/tree/tree_ao.png",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/tree/tree_metallic.png",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/tree/tree_normal.png",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/TestScene/tree/tree_roughness.png",
+			"sourceGroupIndex" : 11
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/LICENSE.txt",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/arm_dif.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/arm_showroom_ddn.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/arm_showroom_spec.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/body_dif.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/body_showroom_ddn.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/body_showroom_spec.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/cube.mtl",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/cube.obj",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/cube_diff.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/floor.mtl",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/floor.obj",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/floor_diff.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/glass_ddn.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/glass_dif.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/hand_dif.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/hand_showroom_ddn.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/hand_showroom_spec.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/helmet_diff.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/helmet_showroom_ddn.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/helmet_showroom_spec.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/leg_dif.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/leg_showroom_ddn.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/leg_showroom_spec.png",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/nanosuit.blend",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/nanosuit.mtl",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/nanosuit/nanosuit.obj",
+			"sourceGroupIndex" : 12
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/models/plane.obj",
+			"sourceGroupIndex" : 13
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/basic.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/basic.vert",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/blur.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/blur.vert",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/blurShaderFinal.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/blurShaderFinal.vert",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/brdf.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/brdf.vert",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/irradiance.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/lightbox.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/lightbox.vert",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/object.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/object.vert",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/objectInstanced.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/objectInstanced.vert",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/particle.comp",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/particle.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/particle.vert",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/particlegen.comp",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/pointshadowmap.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/pointshadowmap.geom",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/pointshadowmap.vert",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/prefilter.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/reflection.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/reflection.vert",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/refract.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/shadowmap.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/shadowmap.vert",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/skyboxCubemap.frag",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/shaders/skyboxCubemap.vert",
+			"sourceGroupIndex" : 14
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/textures/back.jpg",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/textures/bottom.jpg",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/textures/front.jpg",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/textures/left.jpg",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/textures/right.jpg",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/textures/stone.jpg",
+			"sourceGroupIndex" : 15
+		},
+		{
+			"backtrace" : 2,
+			"path" : "res/textures/top.jpg",
+			"sourceGroupIndex" : 15
+		}
+	],
+	"type" : "EXECUTABLE"
+}
